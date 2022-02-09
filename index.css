@@ -1,0 +1,129 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit',sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.main{
+    background: hsl(216, 50%, 16%);
+    margin: 2rem 1rem;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  hsl(178, 100%, 50%,0.3);
+    display: none;
+}
+
+.card-icon img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card:hover .card-icon{
+    display: block;
+    background-color: hsl(178, 100%, 50%,0.3);
+}
+
+.text a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 18px 0;
+}
+
+.text a:hover{
+    color:  hsl(178, 100%, 50%);
+}
+
+.text p{
+    color:  hsl(215, 51%, 70%);
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.img-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.img-icon p{
+    padding-left: 7px;
+}
+
+.Eth,.time{
+    display: flex;
+    align-items: center;
+}
+
+.Eth p{
+    color:  hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+hr{ 
+    border-color:  hsl(178, 100%, 50%);
+}
+
+.author{
+    display: flex;
+    align-items: center;
+}
+
+.author p{
+    padding-left: 7px;
+}
+
+.author img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+a.name{
+    color:  hsl(0, 0%, 100%);
+    font-size: 17px;
+    font-weight: 600;
+}
